@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الدعم الفني — Halaan 1490 (حالا) | Halaan 1490 Support</title>
+<style>
+  :root {
+    --primary: #FEC618;
+    --dark: #1A237E;
+    --body: #1F2937;
+    --muted: #64748B;
+    --bg: #F5F7FF;
+    --danger: #DC2626;
+    --white: #FFFFFF;
+    --success: #16A34A;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Arabic", "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--body);
+    line-height: 1.8;
+  }
+  .hero {
+    background: var(--primary);
+    padding: 50px 20px 40px;
+    text-align: center;
+  }
+  .logo {
+    width: 80px; height: 80px;
+    background: rgba(255,255,255,0.25);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  .logo svg { width: 44px; height: 44px; }
+  .hero h1 { color: var(--white); font-size: 32px; font-weight: 800; margin-bottom: 4px; }
+  .hero .tagline { color: rgba(255,255,255,0.9); font-size: 16px; }
+  .container {
+    max-width: 800px;
+    margin: -20px auto 40px;
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 40px 36px;
+    position: relative;
+    z-index: 1;
+  }
+  .lang-toggle { text-align: center; margin-bottom: 24px; }
+  .lang-toggle button {
+    background: var(--primary);
+    color: var(--dark);
+    border: none;
+    padding: 8px 24px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 4px;
+  }
+  .lang-toggle button.active { background: var(--dark); color: var(--white); }
+  .en { display: none; }
+  body.show-en .ar { display: none; }
+  body.show-en .en { display: block; }
+  a[href^="tel:"], a[href^="mailto:"] { direction: ltr; unicode-bidi: isolate; display: inline-block; }
+  h2 {
+    color: var(--dark);
+    font-size: 22px;
+    margin: 32px 0 12px;
+    padding-right: 14px;
+    border-right: 4px solid var(--primary);
+  }
+  h2:first-of-type { margin-top: 0; }
+  h3 { color: var(--dark); font-size: 17px; margin: 20px 0 8px; }
+  p, li { font-size: 16px; margin-bottom: 12px; }
+  ul, ol { padding-right: 24px; margin-bottom: 16px; }
+  li { margin-bottom: 8px; }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+  }
+  .contact-card {
+    background: var(--bg);
+    border-radius: 14px;
+    padding: 24px 20px;
+    text-align: center;
+    border-top: 4px solid var(--primary);
+  }
+  .contact-card .icon { font-size: 32px; margin-bottom: 8px; }
+  .contact-card h4 { color: var(--dark); font-size: 16px; margin-bottom: 6px; }
+  .contact-card p { font-size: 14px; color: var(--muted); margin-bottom: 4px; }
+  .contact-card a { color: var(--dark); font-weight: 700; text-decoration: none; }
+  .contact-card a:hover { text-decoration: underline; }
+  .emergency {
+    background: #FEF2F2;
+    border: 2px solid var(--danger);
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    margin: 24px 0;
+  }
+  .emergency h4 { color: var(--danger); font-size: 18px; margin-bottom: 6px; }
+  .emergency a {
+    color: var(--danger);
+    font-weight: 800;
+    font-size: 22px;
+    text-decoration: none;
+  }
+  .faq-item {
+    background: var(--bg);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 12px;
+  }
+  .faq-item h4 { color: var(--dark); font-size: 16px; margin-bottom: 6px; }
+  .faq-item p { font-size: 15px; color: var(--muted); margin-bottom: 0; }
+  footer {
+    text-align: center;
+    padding: 24px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="logo">
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8 30 L14 18 L20 30 L26 14 L32 30 L38 20 L44 28" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <circle cx="24" cy="36" r="3" fill="white"/>
+    </svg>
+  </div>
+  <h1>الدعم الفني</h1>
+  <div class="tagline">Halaan 1490 (حالا) — Ababeel Softwares · مركز دعم حالا</div>
+</div>
+
+<div class="container">
+  <div class="lang-toggle">
+    <button class="active" onclick="document.body.classList.remove('show-en');this.classList.add('active');this.nextElementSibling.classList.remove('active')">العربية</button>
+    <button onclick="document.body.classList.add('show-en');this.classList.add('active');this.previousElementSibling.classList.remove('active')">English</button>
+  </div>
+
+  <!-- Arabic -->
+  <div class="ar">
+    <div class="emergency">
+      <h4>⛔ حالة طوارئ على الطريق؟</h4>
+      <p>اتصل بنا فورًا</p>
+      <a href="tel:+218916240066">+218 916 240 066</a>
+    </div>
+
+    <h2>تواصل معنا</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="icon">📧</div>
+        <h4>البريد الإلكتروني</h4>
+        <p>للأسئلة العامة والدعم</p>
+        <a href="mailto:support@halaa.app">support@halaa.app</a>
+      </div>
+      <div class="contact-card">
+        <div class="icon">📱</div>
+        <h4>واتساب / هاتف</h4>
+        <p>من الأحد إلى الخميس، 8ص - 8م</p>
+        <a href="tel:+218916240066">+218 916 240 066</a>
+      </div>
+      <div class="contact-card">
+        <div class="icon">🆘</div>
+        <h4>الطوارئ</h4>
+        <p>24 ساعة — طوال أيام الأسبوع</p>
+        <a href="tel:+218916240066">+218 916 240 066</a>
+      </div>
+    </div>
+
+    <h2>الأسئلة الشائعة</h2>
+
+    <div class="faq-item">
+      <h4>كيف أطلب خدمة صيانة أو إصلاح؟</h4>
+      <p>سجّل الدخول إلى حسابك، اختر نوع الخدمة المطلوبة (صيانة، إصلاح، سحب، طوارئ)، حدد موقعك، ثم أرسل الطلب. سيصلك إشعار بحالة الطلب لحظة بلحظة.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>كيف أتابع حالة طلبي؟</h4>
+      <p>يظهر حالة طلبك مباشرة في الشاشة الرئيسية مع إشعارات فورية عند كل تحديث (قبول الطلب، انطلاق الفني، الوصول).</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>لا أستطيع تسجيل الدخول — ماذا أفعل؟</h4>
+      <p>تأكد من صحة رقم الهاتف أو البريد الإلكتروني وكلمة المرور. إذا استمرت المشكلة، اتصل بنا أو استخدم خاصية "نسيت كلمة المرور" في شاشة الدخول.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>كيف أغيّر بيانات سيارتي؟</h4>
+      <p>انتقل إلى صفحة "حسابي" ثم "بيانات السيارة" وقم بتعديل المعلومات المطلوبة.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>هل خدمة السحب متاحة 24 ساعة؟</h4>
+      <p>نعم، خدمة الطوارئ والسحب متاحة على مدار الساعة طوال أيام الأسبوع.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>كيف أسجّل كسائق في المنصة؟</h4>
+      <p>اختر "إنشاء حساب" ثم حدد نوع المستخدم "سائق"، أكمل بياناتك الشخصية وبيانات المركزة، وارفع الوثائق المطلوبة (رخصة القيادة، بطاقة الهوية، ترخيص المركبة، التأمين). سيتم مراجعة حسابك والموافقة عليه من قبل فريقنا.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>كيف أفعّل إشعارات التطبيق؟</h4>
+      <p>انتقل إلى إعدادات جهازك ← تطبيق حالا ← الإشعارات وفعّلها. سنُرسل لك إشعارات فورية عند تحديث طلباتك وعروضنا.</p>
+    </div>
+
+    <h2>ساعات العمل</h2>
+    <ul>
+      <li><strong>الدعم العام:</strong> الأحد – الخميس، 8:00 صباحًا – 8:00 مساءً</li>
+      <li><strong>خدمات الطوارئ والسحب:</strong> 24 ساعة / 7 أيام في الأسبوع</li>
+    </ul>
+  </div>
+
+  <!-- English -->
+  <div class="en">
+    <div class="emergency">
+      <h4>⛔ Roadside Emergency?</h4>
+      <p>Call us immediately</p>
+      <a href="tel:+218916240066">+218 916 240 066</a>
+    </div>
+
+    <h2>Contact Us</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="icon">📧</div>
+        <h4>Email</h4>
+        <p>General questions & support</p>
+        <a href="mailto:support@halaa.app">support@halaa.app</a>
+      </div>
+      <div class="contact-card">
+        <div class="icon">📱</div>
+        <h4>WhatsApp / Phone</h4>
+        <p>Sunday – Thursday, 8AM – 8PM</p>
+        <a href="tel:+218916240066">+218 916 240 066</a>
+      </div>
+      <div class="contact-card">
+        <div class="icon">🆘</div>
+        <h4>Emergency</h4>
+        <p>24 hours — 7 days a week</p>
+        <a href="tel:+218916240066">+218 916 240 066</a>
+      </div>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h4>How do I request a maintenance or repair service?</h4>
+      <p>Log in to your account, choose the service type (maintenance, repair, towing, emergency), set your location, then submit the request. You'll receive real-time status updates.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>How do I track my order?</h4>
+      <p>Your order status appears on the home screen with instant notifications at every update (request accepted, technician dispatched, technician arrived).</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>I can't log in — what should I do?</h4>
+      <p>Make sure your phone number or email and password are correct. If the issue persists, contact us or use the "Forgot Password" option on the login screen.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>How do I change my vehicle details?</h4>
+      <p>Go to "My Account" → "Vehicle Data" and edit the required information.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>Is towing available 24/7?</h4>
+      <p>Yes, emergency and towing services are available 24 hours a day, 7 days a week.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>How do I register as a driver on the platform?</h4>
+      <p>Tap "Create Account" and select "Driver" as the user type. Complete your personal and vehicle details and upload the required documents (driver's license, national ID, vehicle registration, insurance). Our team will review and approve your account.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>How do I enable app notifications?</h4>
+      <p>Go to your device Settings → Halaa → Notifications and enable them. You'll receive instant alerts for order updates and special offers.</p>
+    </div>
+
+    <h2>Working Hours</h2>
+    <ul>
+      <li><strong>General Support:</strong> Sunday – Thursday, 8:00 AM – 8:00 PM</li>
+      <li><strong>Emergency & Towing:</strong> 24 hours / 7 days a week</li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  © 2026 Halaan 1490 (حالا) — Ababeel Softwares. جميع الحقوق محفوظة | All Rights Reserved.
+</footer>
+
+<script>
+document.querySelectorAll('.lang-toggle button').forEach((btn, i) => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.lang-toggle button').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    const en = i === 1;
+    document.documentElement.setAttribute('dir', en ? 'ltr' : 'rtl');
+    document.documentElement.setAttribute('lang', en ? 'en' : 'ar');
+  });
+});
+</script>
+
+</body>
+</html>

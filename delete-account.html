@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>طلب حذف الحساب والبيانات — Halaan 1490 (حالا)</title>
+<meta name="description" content="كيفية طلب حذف حسابك وبياناتك من تطبيق Halaan 1490 (حالا) — خطوات داخل التطبيق وبالبريد الإلكتروني.">
+<style>
+  :root {
+    --primary: #FEC618;
+    --primary-dark: #E5B000;
+    --dark: #1A237E;
+    --body: #1F2937;
+    --muted: #64748B;
+    --bg: #F5F7FF;
+    --danger: #DC2626;
+    --success: #16A34A;
+    --white: #FFFFFF;
+    --border: #E5E7EB;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Arabic", "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg); color: var(--body);
+    line-height: 1.9; direction: rtl; text-align: right;
+  }
+  .container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+  header {
+    background: linear-gradient(135deg, var(--primary), #FFD84D);
+    padding: 60px 20px 70px; text-align: center;
+  }
+  header h1 { color: var(--dark); font-size: 2rem; margin-bottom: 12px; }
+  header p { color: #374151; font-size: 1.05rem; max-width: 640px; margin: 0 auto; }
+  main { background: var(--white); margin: -30px auto 40px; max-width: 860px;
+    border-radius: 16px; box-shadow: 0 4px 24px rgba(26,35,126,.08); padding: 44px 40px; }
+  h2 {
+    color: var(--dark); font-size: 1.35rem; margin: 34px 0 14px;
+    padding-right: 14px; border-right: 5px solid var(--primary);
+  }
+  h2:first-child { margin-top: 0; }
+  p { margin-bottom: 14px; }
+  ol, ul { padding-right: 24px; margin-bottom: 16px; }
+  li { margin-bottom: 10px; }
+  .card {
+    background: #FFFBEB; border: 1px solid #FDE68A; border-radius: 12px;
+    padding: 20px 24px; margin: 18px 0;
+  }
+  .card.email { background: #EFF6FF; border-color: #BFDBFE; }
+  .card h3 { color: var(--dark); font-size: 1.05rem; margin-bottom: 10px; }
+  .steps { counter-reset: step; list-style: none; padding-right: 0; }
+  .steps li {
+    counter-increment: step; position: relative;
+    padding-right: 46px; min-height: 34px; margin-bottom: 16px;
+  }
+  .steps li::before {
+    content: counter(step);
+    position: absolute; right: 0; top: 0;
+    width: 30px; height: 30px; border-radius: 50%;
+    background: var(--primary); color: var(--dark);
+    font-weight: 700; display: flex; align-items: center; justify-content: center;
+    font-size: .95rem;
+  }
+  .badge {
+    display: inline-block; padding: 3px 12px; border-radius: 999px;
+    font-size: .85rem; font-weight: 700; margin-left: 6px;
+  }
+  .badge.instant { background: #DCFCE7; color: var(--success); }
+  .badge.email-badge { background: #DBEAFE; color: #1D4ED8; }
+  table {
+    width: 100%; border-collapse: collapse; margin: 16px 0 24px;
+    font-size: .97rem;
+  }
+  th, td { padding: 12px 14px; border: 1px solid var(--border); text-align: right; }
+  th { background: #FEF9C3; color: var(--dark); }
+  td.keep { color: var(--muted); }
+  .note {
+    background: #FEE2E2; border-right: 5px solid var(--danger);
+    padding: 14px 18px; border-radius: 8px; margin: 18px 0; font-size: .95rem;
+  }
+  .en { direction: ltr; text-align: left; }
+  .en h2 { border-right: none; border-left: 5px solid var(--primary); padding-right: 0; padding-left: 14px; }
+  .divider { border: none; border-top: 2px dashed var(--border); margin: 44px 0 34px; }
+  .lang-label {
+    display: inline-block; background: var(--dark); color: var(--white);
+    padding: 4px 16px; border-radius: 999px; font-size: .85rem; margin-bottom: 20px;
+  }
+  footer {
+    text-align: center; padding: 26px 20px 40px; color: var(--muted); font-size: .9rem;
+  }
+  a { color: #1D4ED8; }
+  a[href^="tel:"], a[href^="mailto:"] { direction: ltr; unicode-bidi: isolate; display: inline-block; }
+  @media (max-width: 640px) {
+    main { padding: 30px 22px; margin: -30px 14px 30px; }
+    header h1 { font-size: 1.5rem; }
+    table { font-size: .88rem; }
+    th, td { padding: 9px 8px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>طلب حذف الحساب والبيانات</h1>
+    <p>تطبيق <strong>Halaan 1490 (حالا)</strong> — المطوّر: <strong>Ababeel Softwares</strong> — يمكنك طلب حذف حسابك وبياناتك الشخصية في أي وقت، مجانًا، وبطرقتين.</p>
+  </div>
+</header>
+
+<main>
+  <span class="lang-label">العربية</span>
+
+  <h2>الطريقة الأولى: داخل التطبيق <span class="badge instant">فورية</span></h2>
+  <p>الأسهل والأسرع — يتم التنفيذ مباشرة بعد التأكيد:</p>
+  <ol class="steps">
+    <li>سجّل الدخول إلى تطبيق <strong>Halaan 1490 (حالا)</strong>.</li>
+    <li>افتح صفحة <strong>الملف الشخصي (Profile)</strong>.</li>
+    <li>اختر <strong>الأمان (Security)</strong> — تظهر باسم «الأمان» للسائق و«الأمان والخصوصية» للعميل.</li>
+    <li>اضغط على <strong>حذف الحساب (Delete Account)</strong>.</li>
+    <li>أكّد العملية في نافذة التأكيد («تأكيد حذف الحساب») — وسيتم حذف حسابك وبياناتك نهائيًا فورًا ولا يمكن التراجع.</li>
+  </ol>
+
+  <div class="card email">
+    <h3>الطريقة الثانية: عبر البريد الإلكتروني <span class="badge email-badge">بديلة</span></h3>
+    <p>إذا لم تعد لديك إمكانية الدخول إلى التطبيق، راسلنا:</p>
+    <ol class="steps">
+      <li>أرسل بريدًا من <strong>البريد الإلكتروني المسجّل في حسابك</strong> إلى:
+        <br><a href="mailto:ababeel.ly@gmail.com?subject=%D8%B7%D9%84%D8%A8%20%D8%AD%D8%B0%D9%81%20%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%A8%20%D9%88%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%E2%80%94%20Halaan%201490"><strong>ababeel.ly@gmail.com</strong></a></li>
+      <li>اكتب في الموضوع: <code>طلب حذف الحساب والبيانات — Halaan 1490</code></li>
+      <li>أرفق رقم الهاتف أو البريد الإلكتروني المسجّل في الحساب المطلوب حذفه.</li>
+    </ol>
+    <p>سنؤكد استلام الطلب وننفّذه <strong>خلال 30 يومًا كحد أقصى</strong>، ونرد عليك بالتأكيد عند الاكتمال.</p>
+  </div>
+
+  <h2>ما الذي يُحذف وما الذي قد يُحتفظ به؟</h2>
+  <table>
+    <thead>
+      <tr><th>البيانات</th><th>المصير</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>بيانات الحساب (الاسم، البريد، رقم الهاتف، كلمة المرور المشفّرة)</td><td><strong>تُحذف</strong></td></tr>
+      <tr><td>عناوين المحفوظة (الاستلام والتسليم)</td><td><strong>تُحذف</strong></td></tr>
+      <tr><td>بيانات السيارات المضافة وصورها</td><td><strong>تُحذف</strong></td></tr>
+      <tr><td>رموز إشعارات الأجهزة (FCM tokens)</td><td><strong>تُحذف</strong></td></tr>
+      <tr><td>سجل الرحلات والطلبات والمعاملات المالية</td><td class="keep">قد تُحتفظ بها لمدة محدودة لالتزامات محاسبية وقانونية، ثم تُحذف أو تُعطَّل الهوية</td></tr>
+      <tr><td>سجلات الدعم والتواصل معنا</td><td class="keep">قد تُحتفظ بها للمدة اللازمة لمعالجة طلباتك</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    <strong>ملاحظة:</strong> لا يؤثر حذف الحساب على الطلبات أو المعاملات التي قد اكتملت قانونيًا؛
+    تُنشأ هذه السجلات بصفة مستقلة عن حسابك وتُعالج وفقًا لفترة الاحتفاظ النظامية.
+  </div>
+
+  <p>لا يتطلب الطلب أي رسوم. لن نقوم بمشاركة بياناتك مع أطراف ثالثة بعد حذفها، إلا بالقدر الذي يفرضه القانون.</p>
+
+  <hr class="divider">
+
+  <div class="en">
+    <span class="lang-label">English</span>
+
+    <h2>Method 1: In the app <span class="badge instant">Instant</span></h2>
+    <ol class="steps">
+      <li>Sign in to the <strong>Halaan 1490 (حالا)</strong> app.</li>
+      <li>Open your <strong>Profile</strong>.</li>
+      <li>Tap <strong>Security</strong> (shown as "Security" for drivers, "Security &amp; Privacy" for customers).</li>
+      <li>Tap <strong>Delete Account</strong>.</li>
+      <li>Confirm on the "Confirm account deletion" dialog — your account and data are permanently deleted immediately and this cannot be undone.</li>
+    </ol>
+
+    <div class="card email">
+      <h3>Method 2: By email <span class="badge email-badge">Alternative</span></h3>
+      <ol class="steps">
+        <li>Email from your <strong>registered account address</strong> to
+          <a href="mailto:ababeel.ly@gmail.com?subject=Account%20deletion%20request%20%E2%80%94%20Halaan%201490"><strong>ababeel.ly@gmail.com</strong></a></li>
+        <li>Subject: <code>Account deletion request — Halaan 1490</code></li>
+        <li>Include the phone number or email registered on the account to delete.</li>
+      </ol>
+      <p>We acknowledge and complete the request <strong>within a maximum of 30 days</strong>.</p>
+    </div>
+
+    <h2>What is deleted vs. retained</h2>
+    <p><strong>Deleted:</strong> account credentials and profile details, saved addresses, vehicle data and photos, push notification tokens.</p>
+    <p><strong>May be retained for a limited period:</strong> trip/order and financial transaction records where required by accounting and legal obligations (then deleted or de-identified), and support correspondence needed to process your requests.</p>
+
+    <p>Requests are free of charge. We do not share deleted data with third parties except where required by law.</p>
+  </div>
+</main>
+
+<footer>
+  تطبيق Halaan 1490 (حالا) — Ababeel Softwares · خدمات السيارات · <a href="https://privacy.haalan.ly/">سياسة الخصوصية</a> · <a href="https://support.haalan.ly/">الدعم الفني</a>
+</footer>
+
+</body>
+</html>
